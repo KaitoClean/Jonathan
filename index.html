@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width =device-width, inital-scale =1">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+<section id="banner">
+    <div class="banner-text">
+    <h1>Welcome to my Website!</h1>
+    <p>Jonathan A. De Los Angeles</p>
+        
+
+        <div class="banner-btn">
+            <a href="https://www.facebook.com/anathannn" target="_blank">
+                <img src="fb.png" class="fb-icon" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/bradeeeeer/" target="_blank">
+                <img src="ig.png" class="ig-icon" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/bradeeer" target="_blank">
+                <img src="twitter.png" class="twitter-icon" alt="Twitter">
+            </a>
+
+        </div>
+
+        </div>
+    </div>  
+</section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#feature">Games</a></li>
+        <li><a href="#service">favourite pic/GIF</a></li>
+        <li><a href="#information">Personal Information</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="menubtn">
+    <img src="MenuButton.jpg" id="menu">
+</div>
+
+<!--Features-->
+
+<section id="feature">
+<div class="title-text">
+<p>GAMES</p>
+<h1>list of the games i play</h1>
+</div>
+<div class="feature-box">
+    <div class="feature">
+        <h1>Dota 2</h1>
+            <div class="features-desc">               
+                <div class="feature-text"></div>
+                <p>Highest rank is Immortal</p>
+            </div>
+    </div>
+    
+    </div>
+    <h1>Valorant</h1>
+            <div class="features-desc">           
+                <div class="feature-text"></div>
+                <p>Highest rank is platinum</p>
+            </div>
+    </div>
+    <h1>Farlight</h1>
+            <div class="features-desc">               
+                <div class="features-text"></div>
+                <p>Highest rank is Ace</p>
+            </div>
+    </div>
+    <h1>Minecraft</h1>
+            <div class="features-desc">               
+                <div class="features-text"></div>
+                <p>A Survival game</p>
+            </div>
+    </div>
+</div>
+</section>
+
+<!--service-->
+<section id="service">
+    <section id="feature">
+        <div class="title-text">
+        <p>Pictures</p>
+        <h1>Random Pics</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="aw.png">
+            </div>
+            <div class="single-service">
+              <img src="cutie.png">
+            </div>
+            <div class="single-service">
+                <img src="sunset.png">
+            </div>
+            <div class="single-service">
+                <img src="6391731.png">
+            </div>
+        </div>
+</section>
+
+<!--testimonial-->
+
+<section id="information">
+<div class="title-text">
+    <p>information</p>
+    <h1>my personal information</h1>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-col">
+            <p>Hi! My name is Jonathan A. De Los Angeles. I am 20 years old. I live in Tipolo Mandaue City. I love playing Computer games espcially Dota 2.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+var menubtn = document.getElementById("menubtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menubtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0"
+        menu.src = "close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "MenuButton.jpg";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+</script>
+
+</body>
+</html>
